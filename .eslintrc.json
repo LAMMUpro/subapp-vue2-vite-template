@@ -1,0 +1,59 @@
+{
+  "root": true,
+
+  "env": {
+    "node": true
+  },
+
+  "extends": [
+    "plugin:vue/essential",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-absolute-path": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-named-default": "off",
+    "no-console": "off",
+    "no-new": "off",
+    "@typescript-eslint/unbound-method": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/restrict-plus-operands": "off",
+    "@typescript-eslint/promise-function-async": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/prefer-ts-expect-error": "off",
+    "@typescript-eslint/consistent-type-assertions": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "vue/multi-word-component-names": "off",
+    "space-before-blocks": "off",
+    "keyword-spacing": "off"
+  }
+}
