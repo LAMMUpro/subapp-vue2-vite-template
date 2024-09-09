@@ -6,10 +6,11 @@ import { ElementUiResolver } from 'unplugin-vue-components/resolvers'
 import DefineOptions from 'unplugin-vue-define-options/vite'
 import path from 'path'
 import VueMacros from 'unplugin-vue-macros/vite'
+import CONSTS from './src/utils/CONSTS'
 
 export default ({ command: _ }: ConfigEnv): UserConfigExport => {
   return {
-    base: '/vue2v',
+    base: `/${CONSTS.PREFIX_URL}/`,
     server: {
       host: true,
       port: 1350,
@@ -32,6 +33,7 @@ export default ({ command: _ }: ConfigEnv): UserConfigExport => {
       }),
     ],
     build: {
+      outDir: 'build',
       commonjsOptions: {
         include: /node_modules|lib/
       },
