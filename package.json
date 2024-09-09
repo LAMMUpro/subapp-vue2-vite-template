@@ -5,13 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "tsc": "vue-tsc -b",
+    "build": "vite build",
     "preview": "vite preview",
+    "deploy": "s deploy -t s.master.yaml --use-local",
     "lint-fix": "eslint --fix --ext .ts,.vue src",
     "lint": "eslint",
     "prepare": "husky"
   },
   "dependencies": {
+    "@micro-zoe/micro-app": "1.0.0-rc.8",
+    "micro-app-utils": "workspace:*",
     "axios": "^0.27.2",
     "echarts": "^5.4.3",
     "element-ui": "^2.15.14",

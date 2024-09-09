@@ -21,14 +21,13 @@
     "noImplicitAny": false,
     "skipLibCheck": true,
     "typeRoots": ["./node_modules/@types/", "./src/types", "./node_modules"],
-    "types": ["vite/client", "node", "unplugin-vue-macros/vue2-macros-global"],
+    "types": ["vite/client", "node", "unplugin-vue-macros/vue2-macros-global", "micro-app-utils/types/global.d.ts"],
     "removeComments": true,
     "paths": {
       "@/*": ["src/*"]
     },
   },
   "include": [
-    "tests/**/*.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
