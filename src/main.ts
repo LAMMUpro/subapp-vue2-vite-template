@@ -120,7 +120,6 @@ window.mount = () => {
  * 微前端卸载钩子
  */
 window.unmount = async () => {
-  console.log('vue2卸载');
   app.$destroy();
 
   /**
