@@ -7,7 +7,7 @@ import CONSTS from '@/utils/CONSTS';
 import { parseRoutesMetaParentComponent } from '@/router/helper';
 import { generateDataListener } from 'micro-app-utils/listener';
 import { MicroComponentSlotMap } from 'micro-app-utils/data';
-import { isSubApp, MicroAppInit, sendDataDown, sendDataUp } from 'micro-app-utils';
+import { isTopApp, MicroAppInit, sendDataDown, sendDataUp } from 'micro-app-utils';
 import microApp from '@micro-zoe/micro-app';
 
 Vue.use(VueRouter);
@@ -143,6 +143,6 @@ window.unmount = async () => {
 /**
  * 应用独立运行时，直接运行渲染钩子函数
  */
-if (!isSubApp) {
+if (isTopApp) {
   window.mount();
 }
