@@ -131,7 +131,7 @@
     </section>
 
     <section class="-m-card lightcoral">
-      <span class="-m-title">vue3-富文本组件</span>
+      <span class="-m-title">vue2v-富文本组件</span>
       <MicroComponent _is="UseTinymce" v-model="tinymceValue"></MicroComponent>
       <button @click="printTinymceValue">点击打印对应值</button>
     </section>
