@@ -1,5 +1,6 @@
 import { UserConfigExport, ConfigEnv } from 'vite'
 import vue from '@vitejs/plugin-vue2'
+import react from '@vitejs/plugin-react';
 import legacy from '@vitejs/plugin-legacy'
 import Components from 'unplugin-vue-components/vite'
 import { ElementUiResolver } from 'unplugin-vue-components/resolvers'
@@ -21,6 +22,7 @@ export default ({ command: _ }: ConfigEnv): UserConfigExport => {
           vue: vue(),
         },
       }),
+      react(),
       DefineOptions(),
       // 代码降级
       legacy({
