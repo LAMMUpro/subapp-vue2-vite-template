@@ -5,9 +5,9 @@ import { baseRoutes } from '@/router';
 import VueRouter from 'vue-router';
 import CONSTS from '@/utils/CONSTS';
 import { parseRoutesMetaParentComponent } from '@/router/helper';
-import { generateDataListener } from 'micro-app-utils/listener';
+import { generateDataListener } from 'micro-app-utils/vue2/index';
 import { MicroComponentSlotMap } from 'micro-app-utils/data';
-import { isTopApp, MicroAppInit, sendDataDown, sendDataUp } from 'micro-app-utils';
+import { isTopApp, SubMicroAppInit, sendDataDown, sendDataUp } from 'micro-app-utils';
 import microApp from '@micro-zoe/micro-app';
 
 Vue.use(VueRouter);
@@ -22,7 +22,7 @@ Vue.prototype.$ELEMENT = { size: 'mini', zIndex: 3000 };
 window._subAppSettingList_ = window.rawWindow?._subAppSettingList_ || [];
 
 /** 初始化微前端配置 */
-MicroAppInit<'localhost' | 'test' | 'pre' | 'master'>({
+SubMicroAppInit<'localhost' | 'test' | 'pre' | 'master'>({
   env: process.env.NODE_ENV === 'development' ? 'localhost' : 'master',
   tagName: CONSTS.microAppTagName,
   dataListener: generateDataListener({
@@ -51,7 +51,7 @@ MicroAppInit<'localhost' | 'test' | 'pre' | 'master'>({
       });
     },
   }),
-  subAppSettingList: window._subAppSettingList_,
+  subAppSettingList: window._subAppSettingList_ || [],
 });
 
 /** 
