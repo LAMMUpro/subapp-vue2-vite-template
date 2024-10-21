@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@micro-zoe/micro-app": "1.0.0-rc.8",
-    "micro-app-utils": "workspace:*",
     "axios": "^0.27.2",
     "echarts": "^5.4.3",
     "element-ui": "^2.15.14",
