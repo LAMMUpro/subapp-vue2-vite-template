@@ -114,12 +114,11 @@ export default ({ command: _ }: ConfigEnv): UserConfigExport => {
       },
     },
     resolve: {
-      alias: [
-        {
-          find: /@\//,
-          replacement: path.resolve('src') + '/',
-        },
-      ],
+      alias: {
+        /** cdn位置 或 相对当前文件的位置 （本地运行时生效，打包external时不会替换关键词！！！） */
+        '@': path.resolve(__dirname, 'src'),
+        'vue': path.resolve(__dirname, 'node_modules') + '/vue/dist/vue.runtime.esm.js',
+      },
     },
   }
 }
