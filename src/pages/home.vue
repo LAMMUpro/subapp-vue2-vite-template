@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-import MicroComponent from 'micro-app-utils/vue2/MicroComponent.vue';
+import MicroComponent from 'micro-app-tools/vue2/MicroComponent.vue';
 
 </script>
 

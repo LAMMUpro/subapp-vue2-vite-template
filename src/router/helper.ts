@@ -1,5 +1,5 @@
 import Layout from '@/layouts/index.vue';
-import { isTopApp } from 'micro-app-utils';
+import { isTopApp } from 'micro-app-tools';
 import { RouteConfig } from 'vue-router';
 
 /** 

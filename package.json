@@ -41,7 +41,7 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^2.8.8",
-    "sass": "^1.69.7",
+    "sass": "~1.56.0",
     "terser": "^5.26.0",
     "typescript": "^5.5.4",
     "unplugin-vue-components": "^0.22.12",

@@ -5,9 +5,9 @@ import { baseRoutes } from '@/router';
 import VueRouter from 'vue-router';
 import CONSTS from '@/utils/CONSTS';
 import { parseRoutesMetaParentComponent } from '@/router/helper';
-import { generateDataListener } from 'micro-app-utils/vue2/index';
-import { MicroComponentSlotMap } from 'micro-app-utils/data';
-import { isTopApp, SubMicroAppInit, sendDataDown, sendDataUp } from 'micro-app-utils';
+import { generateDataListener } from 'micro-app-tools/vue2/index';
+import { MicroComponentSlotMap } from 'micro-app-tools/data';
+import { isTopApp, SubMicroAppInit, sendDataDown, sendDataUp } from 'micro-app-tools';
 import microApp from '@micro-zoe/micro-app';
 
 Vue.use(VueRouter);
