@@ -1,6 +1,6 @@
 <template>
   <div class="micromainComponent">
-    <section class="-m-card lightblue">
+    <section class="-m-card">
       <span class="-m-title">vue2v-UseSvg图标</span>
       <MicroComponent
         class="a1"
@@ -28,7 +28,7 @@
       ></MicroComponent>
     </section>
 
-    <section class="-m-card lightsalmon">
+    <section class="-m-card">
       <span class="-m-title">vue2v-Dialog弹窗</span>
       <button
         class="btn"
@@ -52,7 +52,7 @@
             >
               点击计数器加1
             </button>
-            <section class="-m-card lightgoldenrodyellow" style="margin-top: 10px;">
+            <section class="-m-card" style="margin-top: 10px;">
               <span class="-m-title">溢出滚动测试</span>
               <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae delectus
@@ -130,7 +130,7 @@
       </MicroComponent>
     </section>
 
-    <section class="-m-card lightcoral">
+    <section class="-m-card">
       <span class="-m-title">vue2v-富文本组件</span>
       <MicroComponent _is="UseTinymce" v-model="tinymceValue"></MicroComponent>
       <button @click="printTinymceValue">点击打印对应值</button>
