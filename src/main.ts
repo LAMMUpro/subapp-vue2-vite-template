@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from '@/App.vue';
 import { createPinia, PiniaVuePlugin } from 'pinia';
-import { baseRoutes } from '@/router';
+import { baseRoutes, setRouter } from '@/router';
 import VueRouter from 'vue-router';
 import CONSTS from '@/utils/CONSTS';
 import { parseRoutesMetaParentComponent } from '@/router/helper';
@@ -84,6 +84,8 @@ window.mount = () => {
     base: `/${CONSTS.PREFIX_URL}/`,
     routes: parseRoutesMetaParentComponent(baseRoutes),
   });
+  /** vue2 vite要手动设置这个对象 */
+  setRouter(router);
 
   app = new Vue({
     router,

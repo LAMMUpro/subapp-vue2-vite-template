@@ -1,5 +1,6 @@
 import Layout from '@/layouts/index.vue';
 import MicroComponent from 'micro-app-tools/vue2/MicroComponent.vue';
+import VueRouter from 'vue-router';
 
 /**
  * demo路由
@@ -77,3 +78,19 @@ export const baseRoutes = [
   },
   ...demoRoutes,
 ];
+
+/** 路由对象 */
+let router: VueRouter = {} as VueRouter;
+
+/** 修改路由对象 */
+export function setRouter(_router: VueRouter) {
+  router = _router;
+}
+
+export function useRouter() {
+  return router;
+}
+
+export function useRoute() {
+  return router.currentRoute;
+}
