@@ -1,7 +1,7 @@
 <template>
   <div class="micromainComponent">
     <section class="-m-card">
-      <span class="-m-title">vue2v-UseSvg图标</span>
+      <span class="-m-title">vue2v使用主应用的UseSvg</span>
       <MicroComponent
         class="a1"
         _is="UseSvg"
@@ -29,7 +29,7 @@
     </section>
 
     <section class="-m-card">
-      <span class="-m-title">vue2v-Dialog弹窗</span>
+      <span class="-m-title">vue2v使用主应用的Dialog</span>
       <button
         class="btn"
         @click="dataBaseDialog.open()"
@@ -131,7 +131,7 @@
     </section>
 
     <section class="-m-card">
-      <span class="-m-title">vue2v-富文本组件</span>
+      <span class="-m-title">vue2v使用主应用的Tinymce</span>
       <MicroComponent _is="UseTinymce" v-model="tinymceValue"></MicroComponent>
       <button @click="printTinymceValue">点击打印对应值</button>
     </section>
