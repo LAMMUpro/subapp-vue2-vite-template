@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <section class="-m-card">
-      <h2 class="-m-title">vue2使用fl-paging-select</h2>
+      <h2 class="-m-title">vue2v使用fl-paging-select</h2>
       <fl-paging-select-v2
         :value.sync="info.id"
         :label.sync="info.name"
@@ -14,14 +14,14 @@
     </section>
 
     <section class="-m-card">
-      <h2 class="-m-title">vue2使用fl-qr-code</h2>
+      <h2 class="-m-title">vue2v使用fl-qr-code</h2>
       <fl-qr-code-v2
         text="https://micro-admin-template.lammu.cn/micromain/demo/frame-less-ui"
       ></fl-qr-code-v2>
     </section>
 
     <section class="-m-card">
-      <h2 class="-m-title">vue2使用fl-button</h2>
+      <h2 class="-m-title">vue2v使用fl-button</h2>
       <fl-button-v2 type="primary">普通按钮</fl-button-v2>
       <fl-button-v2
         class="ml-1"
